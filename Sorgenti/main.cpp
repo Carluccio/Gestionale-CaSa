@@ -3,7 +3,7 @@
  * Purpose:   	Implements simple wxWidgets application with GUI
  * 				created using wxFormBuilder.
  * Author:      Sala Carlo  
- * Created:   	01/02/2019
+ * Created:   	02/02/2019
  * Copyright: 	
  * License:   	wxWidgets license (www.wxwidgets.org)
  * 
