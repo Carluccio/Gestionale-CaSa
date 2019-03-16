@@ -237,7 +237,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	wxBitmap bmp = wxBitmap( wxT("Img/office-chart-pie.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(36), dpiz(36));
 	m_bitmap1 = new wxStaticBitmap( this, wxID_ANY, bmp, wxDefaultPosition, wxDefaultSize, 0 );
-	bSizer3->Add( m_bitmap1, 0, wxALIGN_RIGHT|wxALL|wxALIGN_BOTTOM, 5 );
+	bSizer3->Add( m_bitmap1, 0, wxALL|wxALIGN_BOTTOM, 5 );
 	
 	
 	mainSizer->Add( bSizer3, 0, wxEXPAND, 5 );
@@ -250,7 +250,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_hyperlink1->SetVisitedColour( wxColour( 0, 0, 0 ) );
 	m_hyperlink1->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold().Underlined());
 	//m_hyperlink1->SetFont( wxFont( 9, 74, 90, 92, true, wxT("Tahoma") ) );
-	mainSizer->Add( m_hyperlink1, 0, wxALL|wxALIGN_BOTTOM|wxALIGN_RIGHT, 5 );
+	mainSizer->Add( m_hyperlink1, 0, wxALL|wxALIGN_RIGHT, 5 );
 	mainSizer->Add( 0, dpiz(10), 0, 0, 0 );
 	this->SetSizer( mainSizer );
 	
@@ -351,14 +351,10 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	int index1 = imageList->Add(bitmap1);
 	int index2 = imageList->Add(bitmap2);
 	
-	m_toolBar1 = this->CreateToolBar( wxTB_HORIZONTAL|wxSUNKEN_BORDER, wxID_ANY ); 
-	m_toolBar1->SetToolBitmapSize( wxSize( -1,dpiz(33) ) );
+	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
+	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
-	
-	
-	// rescale it to have size of 32*32
-
-    	
+	   	
 	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton1 );
 	m_toolBar1->AddSeparator();
@@ -389,7 +385,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	wxBoxSizer* bSizer2;
 	bSizer2 = new wxBoxSizer( wxVERTICAL );
-	bSizer2->Add( 0, dpiz(2), 0, 0, 0 );
+	bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
 	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
@@ -649,7 +645,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	sbSizer1->Add( m_staticline1, 0, wxEXPAND | wxALL, 5 );
 	
 	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
+	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	bSizer4->Add( sbSizer1, 0, wxEXPAND, 5 );
 	bSizer4->Add( 0, dpiz(3), 0, 0, 0 );
 	//bSizer4->Add( 0, 0, 1, wxEXPAND, 5 );
@@ -667,8 +663,8 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
 	bSizer2->Add( 0, 0, 1, wxEXPAND, 5 );
-	m_toolBar2 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL ); 
-	m_toolBar2->SetToolBitmapSize( wxSize( -1,dpiz(23) ) );
+	m_toolBar2 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
+	m_toolBar2->SetToolBitmapSize( wxSize( dpiz(24),dpiz(24) ) );
 	m_toolBar2->AddSeparator(); 
 	
 	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -848,13 +844,9 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	int index1 = imageList->Add(bitmap1);
 	int index2 = imageList->Add(bitmap2);
 	
-	m_toolBar1 = this->CreateToolBar( wxTB_HORIZONTAL|wxSUNKEN_BORDER, wxID_ANY ); 
-	m_toolBar1->SetToolBitmapSize( wxSize( -1,dpiz(33) ) );
+	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
+	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
-	
-	
-	// rescale it to have size of 32*32
-
     	
 	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton1 );
@@ -886,7 +878,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	wxBoxSizer* bSizer2;
 	bSizer2 = new wxBoxSizer( wxVERTICAL );
-	bSizer2->Add( 0, dpiz(2), 0, 0, 0 );
+	bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
 	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
@@ -1146,7 +1138,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	sbSizer1->Add( m_staticline1, 0, wxEXPAND | wxALL, 5 );
 	
 	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
+	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	bSizer4->Add( sbSizer1, 0, wxEXPAND, 5 );
 	bSizer4->Add( 0, dpiz(3), 0, 0, 0 );
 	//bSizer4->Add( 0, 0, 1, wxEXPAND, 5 );
@@ -1164,8 +1156,8 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
 	bSizer2->Add( 0, 0, 1, wxEXPAND, 5 );
-	m_toolBar2 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL ); 
-	m_toolBar2->SetToolBitmapSize( wxSize( -1,dpiz(23) ) );
+	m_toolBar2 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
+	m_toolBar2->SetToolBitmapSize( wxSize( dpiz(24),dpiz(24) ) );
 	m_toolBar2->AddSeparator(); 
 	
 	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
