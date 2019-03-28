@@ -36,7 +36,80 @@ bool MainApp::OnInit()
 	#endif
 	principale = new MainFrame(NULL);
 	principale->Show();
-	// true = enter the main loop
+// creazione o verifica esistenza database
+bool creato = false;
+bool aggiornato = false;
+testDBName ="CaSa.db";
+if (!(wxFileExists(testDBName))) {
+	db->Open(testDBName);
+	db->Close();
+	}
+				db->Open(testDBName);
+				if (!(db->TableExists(wxT("Clienti")))) {
+				creato = true;
+				db->ExecuteUpdate(wxT("CREATE TABLE Clienti (ID integer primary key default null, RAG_SOC1 varchar(45), RAG_SOC2 varchar(45), INDIRIZZO varchar(40), CAP varchar(5), CITTA varchar(20), PROVINCIA varchar(2), NAZIONE varchar(12), CODFISC varchar(16), PFIS varchar(2), NPIVA varchar(2), PIVA varchar(11), TELEFONO varchar(15), FAX varchar(15), CELLULARE varchar(15), MAIL varchar(40), WEB varchar(40))"));}
+				
+				if (!(db->TableExists(wxT("Fornitori")))) {
+				creato = true;
+				db->ExecuteUpdate(wxT("CREATE TABLE Fornitori (ID integer primary key default null, RAG_SOC1 varchar(45), RAG_SOC2 varchar(45), INDIRIZZO varchar(40), CAP varchar(5), CITTA varchar(20), PROVINCIA varchar(2), NAZIONE varchar(12), CODFISC varchar(16), PFIS varchar(2), NPIVA varchar(2), PIVA varchar(11), TELEFONO varchar(15), FAX varchar(15), CELLULARE varchar(15), MAIL varchar(40), WEB varchar(40))"));}
+				
+				if (db->TableExists(wxT("Clienti"))) {
+				set = db->ExecuteQuery("PRAGMA table_info(Clienti)");
+				bool g=false;
+				while (set.NextRow())
+				{
+				wxString M = set.GetAsString(1);	
+				if (M=="PAG") {g=true;}
+				}
+				if(g == false){
+				aggiornato = true;
+				db->ExecuteUpdate(wxT("ALTER TABLE Clienti ADD COLUMN PAG varchar(3)"));}}
+				
+				if (db->TableExists(wxT("Fornitori"))) {
+				set = db->ExecuteQuery("PRAGMA table_info(Fornitori)");
+				bool g=false;
+				while (set.NextRow())
+				{
+				wxString M = set.GetAsString(1);	
+				if (M=="PAG") {g=true;}
+				}
+				if(g == false){
+				aggiornato = true;
+				db->ExecuteUpdate(wxT("ALTER TABLE Fornitori ADD COLUMN PAG varchar(3)"));}}
+
+				if (db->TableExists(wxT("Clienti"))) {
+				set = db->ExecuteQuery("PRAGMA index_list(Clienti)");
+				bool g=false;
+				while (set.NextRow())
+				{
+				wxString M = set.GetAsString(1);	
+				if (M=="rag_soc") {g=true;}
+				}
+				if(g == false){
+				aggiornato = true;
+				db->ExecuteUpdate(wxT("CREATE INDEX rag_soc ON Clienti(RAG_SOC1)"));}}
+				
+				if (db->TableExists(wxT("Fornitori"))) {
+				set = db->ExecuteQuery("PRAGMA index_list(Fornitori)");
+				bool g=false;
+				while (set.NextRow())
+				{
+				wxString M = set.GetAsString(1);	
+				if (M=="rag_soc1") {g=true;}
+				}
+				if(g == false){
+				aggiornato = true;
+				db->ExecuteUpdate(wxT("CREATE INDEX rag_soc1 ON Fornitori(RAG_SOC1)"));}}			
+				
+				if (creato) {
+				wxMessageBox("Ho creato nel database le tabelle necessarie ... !",
+			             "Avviso", wxOK | wxICON_INFORMATION);
+				}
+				if ((aggiornato) and (!creato)) {
+				wxMessageBox("Ho aggiornato nel database le tabelle necessarie ... !",
+			             "Avviso", wxOK | wxICON_INFORMATION);
+				}
+		db->Close();
 	return true;
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -58,7 +131,7 @@ void MainFrame::OnCloseFrame(wxCloseEvent& event) //Chiusura box
 	if (CLO){
 	Destroy();
 }
-else {wxMessageBox("Chiudere prima la finestra clienti ... !",
+else {wxMessageBox("Chiudere prima le altre finestre ... !",
 			             "Avviso", wxOK | wxICON_EXCLAMATION);
 clienti->SetFocus();}
 }
@@ -67,7 +140,7 @@ void MainFrame::OnExitClick(wxCommandEvent& event) //Chiusura applicazione
     if (CLO){
 	Destroy();
 }
-else {wxMessageBox("Chiudere prima la finestra clienti ... !",
+else {wxMessageBox("Chiudere prima le altre finestre ... !",
 			             "Avviso", wxOK | wxICON_EXCLAMATION);
 clienti->SetFocus();}
 }
@@ -94,7 +167,6 @@ void MainFrame::OnFrameOpen( wxCommandEvent& event ) //Apertura archivio clienti
 	}
 	clienti->SetFocus();
 	clienti->m_bpButton12->Enable( false );
-	
 }
 void MainFrame::OnFrameOpen3( wxCommandEvent& event ) //Apertura archivio fornitori
 {

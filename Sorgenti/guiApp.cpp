@@ -1,6 +1,9 @@
 ///////////////////////////////////////////////////////////////////////////
 // C++ code generated with wxFormBuilder (version Nov  6 2013)
 // http://www.wxformbuilder.org/
+// Author:    	Sala Carlo
+// Created:   	01/02/2019
+// License:   	wxWidgets license (www.wxwidgets.org)
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
 ///////////////////////////////////////////////////////////////////////////
@@ -27,7 +30,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menuBar = new wxMenuBar( 0 );
 	m_menu3 = new wxMenu();
 	wxMenuItem* m_menuItem5;
-	m_menuItem5 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Azienda") ) + wxT('\t') + wxT("Alt+a"), _("Azienda"), wxITEM_NORMAL );
+	m_menuItem5 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Azienda") ) + wxT('\t') + wxT("Alt+a"), _T("Azienda"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem5->SetBitmaps( wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -38,58 +41,58 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu3->AppendSeparator();
 	
 	wxMenuItem* m_menuItem2;
-	m_menuItem2 = new wxMenuItem( m_menu3, wxID_OPEN, wxString( _("Clienti") ) + wxT('\t') + wxT("Alt+c"), _("Clienti"), wxITEM_NORMAL );
+	m_menuItem2 = new wxMenuItem( m_menu3, wxID_OPEN, wxString( _T("Clienti") ) + wxT('\t') + wxT("Alt+c"), _T("Clienti"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem2 );
 	
 	wxMenuItem* m_menuItem3;
-	m_menuItem3 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Fornitori") ) + wxT('\t') + wxT("Alt+f"), _("Fornitori"), wxITEM_NORMAL );
+	m_menuItem3 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Fornitori") ) + wxT('\t') + wxT("Alt+f"), _T("Fornitori"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem3 );
 	
 	wxMenuItem* m_menuItem27;
-	m_menuItem27 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Vettori") ) + wxT('\t') + wxT("Alt+2"), _("Vettori"), wxITEM_NORMAL );
+	m_menuItem27 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Vettori") ) + wxT('\t') + wxT("Alt+2"), _T("Vettori"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem27 );
 	
 	wxMenuItem* m_menuItem28;
-	m_menuItem28 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Pagamenti") ) + wxT('\t') + wxT("Alt+3"), _("Pagamenti"), wxITEM_NORMAL );
+	m_menuItem28 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Pagamenti") ) + wxT('\t') + wxT("Alt+3"), _T("Pagamenti"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem28 );
 	
 	wxMenuItem* m_menuItem29;
-	m_menuItem29 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Banche") ) + wxT('\t') + wxT("Alt+4"), _("Banche"), wxITEM_NORMAL );
+	m_menuItem29 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Banche") ) + wxT('\t') + wxT("Alt+4"), _T("Banche"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem29 );
 	
 	m_menu3->AppendSeparator();
 	
 	wxMenuItem* m_menuItem4;
-	m_menuItem4 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Piano dei conti") ) + wxT('\t') + wxT("Alt+p"), _("Piano dei conti"), wxITEM_NORMAL );
+	m_menuItem4 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Piano dei conti") ) + wxT('\t') + wxT("Alt+p"), _T("Piano dei conti"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem4 );
 	
 	wxMenuItem* m_menuItem6;
-	m_menuItem6 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Codici iva") ) + wxT('\t') + wxT("Alt+i"), _("Codici iva"), wxITEM_NORMAL );
+	m_menuItem6 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Codici iva") ) + wxT('\t') + wxT("Alt+i"), _T("Codici iva"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem6 );
 	
 	wxMenuItem* m_menuItem17;
-	m_menuItem17 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Causali contabili") ) + wxT('\t') + wxT("Alt+n"), _("Causali contabili"), wxITEM_NORMAL );
+	m_menuItem17 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Causali contabili") ) + wxT('\t') + wxT("Alt+n"), _T("Causali contabili"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem17 );
 	
 	wxMenuItem* m_menuItem18;
-	m_menuItem18 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Progressivi pagine") ) + wxT('\t') + wxT("Alt+e"), _("Progressivi pagine"), wxITEM_NORMAL );
+	m_menuItem18 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Progressivi pagine") ) + wxT('\t') + wxT("Alt+e"), _T("Progressivi pagine"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem18 );
 	
 	m_menu3->AppendSeparator();
 	
 	wxMenuItem* m_menuItem25;
-	m_menuItem25 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Anagrafica articoli") ) + wxT('\t') + wxT("Alt+j"), _("Anagrafica articoli"), wxITEM_NORMAL );
+	m_menuItem25 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Anagrafica articoli") ) + wxT('\t') + wxT("Alt+j"), _T("Anagrafica articoli"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem25 );
 	m_menuItem25->Enable( false );
 	
 	wxMenuItem* m_menuItem30;
-	m_menuItem30 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _("Causali di magazzino") ) + wxT('\t') + wxT("Alt+5"), _("Causali di magazzino"), wxITEM_NORMAL );
+	m_menuItem30 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Causali di magazzino") ) + wxT('\t') + wxT("Alt+5"), _T("Causali di magazzino"), wxITEM_NORMAL );
 	m_menu3->Append( m_menuItem30 );
 	m_menuItem30->Enable( false );
 	m_menu3->AppendSeparator();
 	
 	wxMenuItem* menuFileExit;
-	menuFileExit = new wxMenuItem( m_menu3, wxID_EXIT, wxString( _("Chiudi applicazione") ) + wxT('\t') + wxT("Alt+x"), _("Chiudi applicazione"), wxITEM_NORMAL );
+	menuFileExit = new wxMenuItem( m_menu3, wxID_EXIT, wxString( _T("Chiudi applicazione") ) + wxT('\t') + wxT("Alt+x"), _T("Chiudi applicazione"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	menuFileExit->SetBitmaps( wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -97,11 +100,11 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	#endif
 	m_menu3->Append( menuFileExit );
 	
-	m_menuBar->Append( m_menu3, _("&Archivi") ); 
+	m_menuBar->Append( m_menu3, _T("&Archivi") ); 
 	
 	m_menu2 = new wxMenu();
 	wxMenuItem* m_menuItem7;
-	m_menuItem7 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _("Prima nota") ) + wxT('\t') + wxT("Alt+m"), _("Prima nota"), wxITEM_NORMAL );
+	m_menuItem7 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _T("Prima nota") ) + wxT('\t') + wxT("Alt+m"), _T("Prima nota"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem7->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -110,33 +113,33 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu2->Append( m_menuItem7 );
 	
 	wxMenuItem* m_menuItem22;
-	m_menuItem22 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _("Partitari") ) + wxT('\t') + wxT("Alt+z"), _("Partitari"), wxITEM_NORMAL );
+	m_menuItem22 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _T("Partitari") ) + wxT('\t') + wxT("Alt+z"), _T("Partitari"), wxITEM_NORMAL );
 	m_menu2->Append( m_menuItem22 );
 	
 	wxMenuItem* m_menuItem202;
-	m_menuItem202 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _("Bilancio") ) + wxT('\t') + wxT("Alt+h"), _("Bilancio"), wxITEM_NORMAL );
+	m_menuItem202 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _T("Bilancio") ) + wxT('\t') + wxT("Alt+h"), _T("Bilancio"), wxITEM_NORMAL );
 	m_menu2->Append( m_menuItem202 );
 	
 	m_menu1 = new wxMenu();
 	wxMenuItem* m_menuItem212;
-	m_menuItem212 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _("Chiusura conto economico") ) + wxT('\t') + wxT("Alt+l"), _("Chiusura conto economico"), wxITEM_NORMAL );
+	m_menuItem212 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _T("Chiusura conto economico") ) + wxT('\t') + wxT("Alt+l"), _T("Chiusura conto economico"), wxITEM_NORMAL );
 	m_menu1->Append( m_menuItem212 );
 	
 	wxMenuItem* m_menuItem221;
-	m_menuItem221 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _("Chiusura sit. patrimoniale") ) + wxT('\t') + wxT("Alt+o"), _("Chiusura sit. patrimoniale"), wxITEM_NORMAL );
+	m_menuItem221 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _T("Chiusura sit. patrimoniale") ) + wxT('\t') + wxT("Alt+o"), _T("Chiusura sit. patrimoniale"), wxITEM_NORMAL );
 	m_menu1->Append( m_menuItem221 );
 	
 	wxMenuItem* m_menuItem23;
-	m_menuItem23 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _("Apertura bilancio") ) + wxT('\t') + wxT("Alt+w"), _("Apertura bilancio"), wxITEM_NORMAL );
+	m_menuItem23 = new wxMenuItem( m_menu1, wxID_ANY, wxString( _T("Apertura bilancio") ) + wxT('\t') + wxT("Alt+w"), _T("Apertura bilancio"), wxITEM_NORMAL );
 	m_menu1->Append( m_menuItem23 );
 	
-	m_menu2->Append( -1, _("Operazioni annuali"), m_menu1 );
+	m_menu2->Append( -1, _T("Operazioni annuali"), m_menu1 );
 	
-	m_menuBar->Append( m_menu2, _("&Contabilità") ); 
+	m_menuBar->Append( m_menu2, _T("&Contabilità") ); 
 	
 	m_menu6 = new wxMenu();
 	wxMenuItem* m_menuItem191;
-	m_menuItem191 = new wxMenuItem( m_menu6, wxID_ANY, wxString( _("Fatture di vendita") ) + wxT('\t') + wxT("Alt+v"), _("Fatture di vendita"), wxITEM_NORMAL );
+	m_menuItem191 = new wxMenuItem( m_menu6, wxID_ANY, wxString( _T("Fatture di vendita") ) + wxT('\t') + wxT("Alt+v"), _T("Fatture di vendita"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem191->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -145,11 +148,11 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu6->Append( m_menuItem191 );
 	m_menuItem191->Enable( false );
 	
-	m_menuBar->Append( m_menu6, _("&Vendite") ); 
+	m_menuBar->Append( m_menu6, _T("&Vendite") ); 
 	
 	m_menu5 = new wxMenu();
 	wxMenuItem* m_menuItem15;
-	m_menuItem15 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _("Libri iva") ) + wxT('\t') + wxT("Alt+q"), _("Stampe libri iva"), wxITEM_NORMAL );
+	m_menuItem15 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _T("Libri iva") ) + wxT('\t') + wxT("Alt+q"), _T("Stampe libri iva"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem15->SetBitmaps( wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -158,25 +161,25 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu5->Append( m_menuItem15 );
 	
 	wxMenuItem* m_menuItem211;
-	m_menuItem211 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _("Liquidazione iva") ) + wxT('\t') + wxT("Alt+u"), _("Liquidazione iva"), wxITEM_NORMAL );
+	m_menuItem211 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _T("Liquidazione iva") ) + wxT('\t') + wxT("Alt+u"), _T("Liquidazione iva"), wxITEM_NORMAL );
 	m_menu5->Append( m_menuItem211 );
 	
 	wxMenuItem* m_menuItem16;
-	m_menuItem16 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _("Libro giornale") ) + wxT('\t') + wxT("Alt+g"), _("Stampa libro giornale"), wxITEM_NORMAL );
+	m_menuItem16 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _T("Libro giornale") ) + wxT('\t') + wxT("Alt+g"), _T("Stampa libro giornale"), wxITEM_NORMAL );
 	m_menu5->Append( m_menuItem16 );
 	
 	m_menu5->AppendSeparator();
 	
 	wxMenuItem* m_menuItem261;
-	m_menuItem261 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _("Libro magazzino") ) + wxT('\t') + wxT("Alt+1"), _("Libro magazzino"), wxITEM_NORMAL );
+	m_menuItem261 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _T("Libro magazzino") ) + wxT('\t') + wxT("Alt+1"), _T("Libro magazzino"), wxITEM_NORMAL );
 	m_menu5->Append( m_menuItem261 );
 	m_menuItem261->Enable( false );
 	
-	m_menuBar->Append( m_menu5, _("&Stampe contabili") ); 
+	m_menuBar->Append( m_menu5, _T("&Stampe contabili") ); 
 	
 	m_menu4 = new wxMenu();
 	wxMenuItem* m_menuItem24;
-	m_menuItem24 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Scelta azienda") ) + wxT('\t') + wxT("Alt+y"), wxEmptyString, wxITEM_NORMAL );
+	m_menuItem24 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Scelta azienda") ) + wxT('\t') + wxT("Alt+y"), wxEmptyString, wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem24->SetBitmaps( wxBitmap( wxT("Img/cog.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -185,26 +188,26 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu4->Append( m_menuItem24 );
 	
 	wxMenuItem* m_menuItem26;
-	m_menuItem26 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Copie di sicurezza") ) + wxT('\t') + wxT("Alt+s"), _("Copie di sicurezza"), wxITEM_NORMAL );
+	m_menuItem26 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Copie di sicurezza") ) + wxT('\t') + wxT("Alt+s"), _T("Copie di sicurezza"), wxITEM_NORMAL );
 	m_menu4->Append( m_menuItem26 );
 	
 	wxMenuItem* m_menuItem19;
-	m_menuItem19 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Ricostruzione saldi") ) + wxT('\t') + wxT("Alt+d"), _("Ricostruzione saldi"), wxITEM_NORMAL );
+	m_menuItem19 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Ricostruzione saldi") ) + wxT('\t') + wxT("Alt+d"), _T("Ricostruzione saldi"), wxITEM_NORMAL );
 	m_menu4->Append( m_menuItem19 );
 	
 	wxMenuItem* m_menuItem20;
-	m_menuItem20 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Compattazione archivi") ) + wxT('\t') + wxT("Alt+b"), _("Compattazione archivi"), wxITEM_NORMAL );
+	m_menuItem20 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Compattazione archivi") ) + wxT('\t') + wxT("Alt+b"), _T("Compattazione archivi"), wxITEM_NORMAL );
 	m_menu4->Append( m_menuItem20 );
 	
 	wxMenuItem* m_menuItem21;
-	m_menuItem21 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Riparazione archivi") ) + wxT('\t') + wxT("Alt+r"), _("Riparazione archivi"), wxITEM_NORMAL );
+	m_menuItem21 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Riparazione archivi") ) + wxT('\t') + wxT("Alt+r"), _T("Riparazione archivi"), wxITEM_NORMAL );
 	m_menu4->Append( m_menuItem21 );
 	
-	m_menuBar->Append( m_menu4, _("&Utilità") ); 
+	m_menuBar->Append( m_menu4, _T("&Utilità") ); 
 	
 	m_menu10 = new wxMenu();
 	wxMenuItem* m_menuItem201;
-	m_menuItem201 = new wxMenuItem( m_menu10, wxID_ANY, wxString( _("Modulo fatture") ) + wxT('\t') + wxT("Alt+t"), _("Modulo fatture"), wxITEM_NORMAL );
+	m_menuItem201 = new wxMenuItem( m_menu10, wxID_ANY, wxString( _T("Modulo fatture") ) + wxT('\t') + wxT("Alt+t"), _T("Modulo fatture"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
 	m_menuItem201->SetBitmaps( wxBitmap( wxT("Img/cog_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
 	#elif defined( __WXGTK__ )
@@ -213,7 +216,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menu10->Append( m_menuItem201 );
 	m_menuItem201->Enable( false );
 	
-	m_menuBar->Append( m_menu10, _("&Impostazioni") ); 
+	m_menuBar->Append( m_menu10, _T("&Impostazioni") ); 
 	
 	this->SetMenuBar( m_menuBar );
 	
@@ -229,7 +232,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	bSizer3->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText7 = new wxStaticText( this, wxID_ANY, _("Gestionale CA.SA."), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText7 = new wxStaticText( this, wxID_ANY, _T("Gestionale CA.SA."), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText7->Wrap( -1 );
 	m_staticText7->SetFont(wxFontInfo(12).FaceName("Tahoma"));
 	//m_staticText7->SetFont( wxFont( 12, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -243,7 +246,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	mainSizer->Add( bSizer3, 0, wxEXPAND, 5 );
 	
 	
-	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _("© Carlo Sala Software - v.1.0.0"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
+	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _T("© Carlo Sala Software - v.1.0.0"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
 	
 	m_hyperlink1->SetHoverColour( wxColour( 255, 255, 255 ) );
 	m_hyperlink1->SetNormalColour( wxColour( 0, 0, 0 ) );
@@ -399,7 +402,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText11 = new wxStaticText( m_panel1, wxID_ANY, _("Codice:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText11 = new wxStaticText( m_panel1, wxID_ANY, _T("Codice:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText11->Wrap( -1 );
 	bSizer8->Add( m_staticText11, 0, wxALL, 4 );
 	m_textCtrl152 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( dpiz(50),-1 ), 0|wxWANTS_CHARS,textValidator );
@@ -411,7 +414,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer8->Add( m_textCtrl152, 0, wxALL, 5 );
 	
 	m_textCtrl6 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl6->SetMaxLength( 40 );
+	m_textCtrl6->SetMaxLength( 45 );
 	m_textCtrl6->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
 	//m_textCtrl6->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
 	m_textCtrl6->SetForegroundColour( wxColour( 255, 255, 255 ) );
@@ -428,7 +431,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer9->Add( dpiz(138),0,0,0,0 ); //78+50+10
 	
 	m_textCtrl8 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl8->SetMaxLength( 40 );
+	m_textCtrl8->SetMaxLength( 45 );
 	m_textCtrl8->SetFont(wxFontInfo(9).FaceName("Tahoma"));
 	//m_textCtrl8->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
 	
@@ -441,7 +444,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131 = new wxBoxSizer( wxVERTICAL );
 	m_staticline3 = new wxStaticLine( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
 	bSizer131->Add( m_staticline3, 0, wxEXPAND | wxALL, 5 );
-	m_staticText221 = new wxStaticText( m_panel1, wxID_ANY, _("Dati anagrafici"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText221 = new wxStaticText( m_panel1, wxID_ANY, _T("Dati anagrafici"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText221->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
 	m_staticText221->SetForegroundColour( wxColour( 67, 118, 254 ) );
 	m_staticText221->Wrap( -1 );
@@ -454,13 +457,13 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	
 	
-	m_staticText15 = new wxStaticText( m_panel1, wxID_ANY, _("Indirizzo:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText15 = new wxStaticText( m_panel1, wxID_ANY, _T("Indirizzo:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText15->Wrap( -1 );
 	bSizer11->Add( m_staticText15, 0, wxALL, 5 );
 	
 	
 	m_textCtrl11 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl11->SetMaxLength( 30 );
+	m_textCtrl11->SetMaxLength( 40 );
 	bSizer11->Add( m_textCtrl11, 1, wxALL, 5 );
 	
 	
@@ -469,7 +472,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer12;
 	bSizer12 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText19 = new wxStaticText( m_panel1, wxID_ANY, _("Cap:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText19 = new wxStaticText( m_panel1, wxID_ANY, _T("Cap:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText19->Wrap( -1 );
 	bSizer12->Add( m_staticText19, 0, wxALL, 5 );
 	
@@ -478,7 +481,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl14->SetMaxLength( 5 );
 	bSizer12->Add( m_textCtrl14, 0, wxALL, 5 );
 	
-	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _T("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText18->Wrap( -1 );
 	bSizer12->Add( m_staticText18, 0, wxALL, 5 );
 	
@@ -488,7 +491,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl13->SetBackgroundColour( wxColour( 66, 136, 96 ) );
 	bSizer12->Add( m_textCtrl13, 1, wxALL, 5 );
 	
-	m_staticText20 = new wxStaticText( m_panel1, wxID_ANY, _("Pr.:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText20 = new wxStaticText( m_panel1, wxID_ANY, _T("Pr.:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText20->Wrap( -1 );
 	bSizer12->Add( m_staticText20, 0, wxALL, 5 );
 	
@@ -502,7 +505,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer10;
 	bSizer10 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText17 = new wxStaticText( m_panel1, wxID_ANY, _("Nazione:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText17 = new wxStaticText( m_panel1, wxID_ANY, _T("Nazione:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText17->Wrap( -1 );
 	bSizer10->Add( m_staticText17, 0, wxALL, 5 );
 	
@@ -516,7 +519,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer13;
 	bSizer13 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText21 = new wxStaticText( m_panel1, wxID_ANY, _("Codice fiscale:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText21 = new wxStaticText( m_panel1, wxID_ANY, _T("Codice fiscale:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText21->Wrap( -1 );
 	bSizer13->Add( m_staticText21, 0, wxALL, 5 );
 	
@@ -526,12 +529,12 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer13->Add( m_textCtrl16, 1, wxALL, 5 );
 	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton16, 0, wxALL, 5 );
-	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _T("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer13->Add( m_checkBox1, 0, wxALL, 5 );
 	
 	bSizer13->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText22 = new wxStaticText( m_panel1, wxID_ANY, _("Partita iva:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText22 = new wxStaticText( m_panel1, wxID_ANY, _T("Partita iva:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText22->Wrap( -1 );
 	bSizer13->Add( m_staticText22, 0, wxALL, 5 );
 	
@@ -552,7 +555,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer111;
 	bSizer111 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText202 = new wxStaticText( m_panel1, wxID_ANY, _("Telefono:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText202 = new wxStaticText( m_panel1, wxID_ANY, _T("Telefono:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText202->Wrap( -1 );
 	bSizer111->Add( m_staticText202, 0, wxALL, 5 );
 		
@@ -563,7 +566,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer111->Add( 0, 5, 1, wxEXPAND, 5 );
 	
-	m_staticText212 = new wxStaticText( m_panel1, wxID_ANY, _("Fax:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText212 = new wxStaticText( m_panel1, wxID_ANY, _T("Fax:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText212->Wrap( -1 );
 	bSizer111->Add( m_staticText212, 0, wxALL, 5 );
 	
@@ -574,7 +577,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer111->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText222 = new wxStaticText( m_panel1, wxID_ANY, _("Cellulare:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText222 = new wxStaticText( m_panel1, wxID_ANY, _T("Cellulare:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText222->Wrap( -1 );
 	bSizer111->Add( m_staticText222, 0, wxALL, 5 );
 	
@@ -588,23 +591,23 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer14;
 	bSizer14 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText23 = new wxStaticText( m_panel1, wxID_ANY, _("E@Mail:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText23 = new wxStaticText( m_panel1, wxID_ANY, _T("E@Mail:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText23->Wrap( -1 );
 	bSizer14->Add( m_staticText23, 0, wxALL, 5 );
 	
 	
 	m_textCtrl151 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl151->SetMaxLength( 30 );
+	m_textCtrl151->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl151, 1, wxALL, 5 );
 	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton17, 0, wxALL, 5 );
 	
-	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _T("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText24->Wrap( -1 );
 	bSizer14->Add( m_staticText24, 0, wxALL, 5 );
 	
 	m_textCtrl153 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl153->SetMaxLength( 30 );
+	m_textCtrl153->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl153, 1, wxALL, 5 );
 	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton18, 0, wxALL, 5 );
@@ -619,11 +622,11 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer121;
 	bSizer121 = new wxBoxSizer( wxVERTICAL );
 	
-	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _("Ordine alfabetico"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _T("Ordine alfabetico"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_radioBtn1->SetValue( true ); 
 	bSizer121->Add( m_radioBtn1, 0, wxALL, 5 );
 	
-	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _("Ordine di inserimento"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _T("Ordine di inserimento"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer121->Add( m_radioBtn2, 0, wxALL, 5 );
 	
 	
@@ -633,7 +636,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	sbSizer1->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText211 = new wxStaticText( m_panel1, wxID_ANY, _("Ok cliente"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText211 = new wxStaticText( m_panel1, wxID_ANY, _T("Ok cliente"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText211->Wrap( -1 );
 	m_staticText211->SetFont(wxFontInfo(11).FaceName("Tahoma").Bold());
 	//m_staticText211->SetFont( wxFont( 11, 74, 90, 92, false, wxT("Tahoma") ) );
@@ -652,13 +655,13 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_panel1->SetSizer( bSizer4 );
 	m_panel1->Layout();
 	//bSizer4->Fit( m_panel1 );
-	m_notebook1->AddPage( m_panel1, _("Anagrafica 1"),true, index1);
+	m_notebook1->AddPage( m_panel1, _T("Anagrafica 1"),true, index1);
 	//------------------------------------------------------------------------------------------------Fine panel 1
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel2, _("Anagrafica 2"), false, index1 );
+	m_notebook1->AddPage( m_panel2, _T("Anagrafica 2"), false, index1 );
 	//------------------------------------------------------------------------------------------------Fine panel 2
 	m_panel3 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel3, _("Stampe"), false, index2 );
+	m_notebook1->AddPage( m_panel3, _T("Stampe"), false, index2 );
 	//------------------------------------------------------------------------------------------------Fine panel 3
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
@@ -667,7 +670,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_toolBar2->SetToolBitmapSize( wxSize( dpiz(24),dpiz(24) ) );
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText2->Wrap( -1 );
 	m_staticText2->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText2->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -678,7 +681,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText3 = new wxStaticText( m_toolBar2, wxID_ANY, _("F4 Carica"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText3 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F4 Carica"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText3->Wrap( -1 );
 	m_staticText3->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText3->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -689,7 +692,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText4 = new wxStaticText( m_toolBar2, wxID_ANY, _("F5 Varia"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText4 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F5 Varia"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText4->Wrap( -1 );
 	m_staticText4->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText4->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -700,7 +703,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText51 = new wxStaticText( m_toolBar2, wxID_ANY, _("F6 Elimina"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText51 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F6 Elimina"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText51->Wrap( -1 );
 	m_staticText51->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText51->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -711,7 +714,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText5 = new wxStaticText( m_toolBar2, wxID_ANY, _("F10 Salva"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText5 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F10 Salva"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText5->Wrap( -1 );
 	m_staticText5->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText5->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -722,7 +725,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText6 = new wxStaticText( m_toolBar2, wxID_ANY, _("F11 Stampa"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText6 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F11 Stampa"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText6->Wrap( -1 );
 	m_staticText6->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText6->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -733,7 +736,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText201 = new wxStaticText( m_toolBar2, wxID_ANY, _("F1 Help"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText201 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F1 Help"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText201->Wrap( -1 );
 	m_staticText201->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText201->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -892,7 +895,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText11 = new wxStaticText( m_panel1, wxID_ANY, _("Codice:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText11 = new wxStaticText( m_panel1, wxID_ANY, _T("Codice:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText11->Wrap( -1 );
 	bSizer8->Add( m_staticText11, 0, wxALL, 4 );
 	m_textCtrl152 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( dpiz(50),-1 ), 0|wxWANTS_CHARS,textValidator );
@@ -904,7 +907,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer8->Add( m_textCtrl152, 0, wxALL, 5 );
 	
 	m_textCtrl6 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl6->SetMaxLength( 40 );
+	m_textCtrl6->SetMaxLength( 45 );
 	m_textCtrl6->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
 	//m_textCtrl6->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
 	m_textCtrl6->SetForegroundColour( wxColour( 255, 255, 255 ) );
@@ -921,7 +924,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer9->Add( dpiz(138),0,0,0,0 ); //78+50+10
 	
 	m_textCtrl8 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl8->SetMaxLength( 40 );
+	m_textCtrl8->SetMaxLength( 45 );
 	m_textCtrl8->SetFont(wxFontInfo(9).FaceName("Tahoma"));
 	//m_textCtrl8->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
 	
@@ -934,7 +937,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131 = new wxBoxSizer( wxVERTICAL );
 	m_staticline3 = new wxStaticLine( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
 	bSizer131->Add( m_staticline3, 0, wxEXPAND | wxALL, 5 );
-	m_staticText221 = new wxStaticText( m_panel1, wxID_ANY, _("Dati anagrafici"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText221 = new wxStaticText( m_panel1, wxID_ANY, _T("Dati anagrafici"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText221->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
 	m_staticText221->SetForegroundColour( wxColour( 67, 118, 254 ) );
 	m_staticText221->Wrap( -1 );
@@ -947,13 +950,13 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	
 	
-	m_staticText15 = new wxStaticText( m_panel1, wxID_ANY, _("Indirizzo:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText15 = new wxStaticText( m_panel1, wxID_ANY, _T("Indirizzo:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText15->Wrap( -1 );
 	bSizer11->Add( m_staticText15, 0, wxALL, 5 );
 	
 	
 	m_textCtrl11 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl11->SetMaxLength( 30 );
+	m_textCtrl11->SetMaxLength( 40 );
 	bSizer11->Add( m_textCtrl11, 1, wxALL, 5 );
 	
 	
@@ -962,7 +965,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer12;
 	bSizer12 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText19 = new wxStaticText( m_panel1, wxID_ANY, _("Cap:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText19 = new wxStaticText( m_panel1, wxID_ANY, _T("Cap:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText19->Wrap( -1 );
 	bSizer12->Add( m_staticText19, 0, wxALL, 5 );
 	
@@ -971,7 +974,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl14->SetMaxLength( 5 );
 	bSizer12->Add( m_textCtrl14, 0, wxALL, 5 );
 	
-	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _T("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText18->Wrap( -1 );
 	bSizer12->Add( m_staticText18, 0, wxALL, 5 );
 	
@@ -981,7 +984,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl13->SetBackgroundColour( wxColour( 66, 136, 96 ) );
 	bSizer12->Add( m_textCtrl13, 1, wxALL, 5 );
 	
-	m_staticText20 = new wxStaticText( m_panel1, wxID_ANY, _("Pr.:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText20 = new wxStaticText( m_panel1, wxID_ANY, _T("Pr.:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText20->Wrap( -1 );
 	bSizer12->Add( m_staticText20, 0, wxALL, 5 );
 	
@@ -995,7 +998,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer10;
 	bSizer10 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText17 = new wxStaticText( m_panel1, wxID_ANY, _("Nazione:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText17 = new wxStaticText( m_panel1, wxID_ANY, _T("Nazione:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText17->Wrap( -1 );
 	bSizer10->Add( m_staticText17, 0, wxALL, 5 );
 	
@@ -1009,7 +1012,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer13;
 	bSizer13 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText21 = new wxStaticText( m_panel1, wxID_ANY, _("Codice fiscale:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText21 = new wxStaticText( m_panel1, wxID_ANY, _T("Codice fiscale:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText21->Wrap( -1 );
 	bSizer13->Add( m_staticText21, 0, wxALL, 5 );
 	
@@ -1019,12 +1022,12 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer13->Add( m_textCtrl16, 1, wxALL, 5 );
 	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton16, 0, wxALL, 5 );
-	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _T("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer13->Add( m_checkBox1, 0, wxALL, 5 );
 	
 	bSizer13->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText22 = new wxStaticText( m_panel1, wxID_ANY, _("Partita iva:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText22 = new wxStaticText( m_panel1, wxID_ANY, _T("Partita iva:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText22->Wrap( -1 );
 	bSizer13->Add( m_staticText22, 0, wxALL, 5 );
 	
@@ -1045,7 +1048,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer111;
 	bSizer111 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText202 = new wxStaticText( m_panel1, wxID_ANY, _("Telefono:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText202 = new wxStaticText( m_panel1, wxID_ANY, _T("Telefono:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText202->Wrap( -1 );
 	bSizer111->Add( m_staticText202, 0, wxALL, 5 );
 		
@@ -1056,7 +1059,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer111->Add( 0, 5, 1, wxEXPAND, 5 );
 	
-	m_staticText212 = new wxStaticText( m_panel1, wxID_ANY, _("Fax:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText212 = new wxStaticText( m_panel1, wxID_ANY, _T("Fax:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText212->Wrap( -1 );
 	bSizer111->Add( m_staticText212, 0, wxALL, 5 );
 	
@@ -1067,7 +1070,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	bSizer111->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText222 = new wxStaticText( m_panel1, wxID_ANY, _("Cellulare:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText222 = new wxStaticText( m_panel1, wxID_ANY, _T("Cellulare:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText222->Wrap( -1 );
 	bSizer111->Add( m_staticText222, 0, wxALL, 5 );
 	
@@ -1081,23 +1084,23 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer14;
 	bSizer14 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText23 = new wxStaticText( m_panel1, wxID_ANY, _("E@Mail:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText23 = new wxStaticText( m_panel1, wxID_ANY, _T("E@Mail:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
 	m_staticText23->Wrap( -1 );
 	bSizer14->Add( m_staticText23, 0, wxALL, 5 );
 	
 	
 	m_textCtrl151 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl151->SetMaxLength( 30 );
+	m_textCtrl151->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl151, 1, wxALL, 5 );
 	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton17, 0, wxALL, 5 );	
 	
-	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _T("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText24->Wrap( -1 );
 	bSizer14->Add( m_staticText24, 0, wxALL, 5 );
 	
 	m_textCtrl153 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	m_textCtrl153->SetMaxLength( 30 );
+	m_textCtrl153->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl153, 1, wxALL, 5 );
 	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton18, 0, wxALL, 5 );
@@ -1112,11 +1115,11 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer121;
 	bSizer121 = new wxBoxSizer( wxVERTICAL );
 	
-	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _("Ordine alfabetico"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _T("Ordine alfabetico"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_radioBtn1->SetValue( true ); 
 	bSizer121->Add( m_radioBtn1, 0, wxALL, 5 );
 	
-	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _("Ordine di inserimento"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _T("Ordine di inserimento"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer121->Add( m_radioBtn2, 0, wxALL, 5 );
 	
 	
@@ -1126,7 +1129,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	sbSizer1->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_staticText211 = new wxStaticText( m_panel1, wxID_ANY, _("OK fornitore"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText211 = new wxStaticText( m_panel1, wxID_ANY, _T("OK fornitore"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText211->Wrap( -1 );
 	m_staticText211->SetFont(wxFontInfo(11).FaceName("Tahoma").Bold());
 	//m_staticText211->SetFont( wxFont( 11, 74, 90, 92, false, wxT("Tahoma") ) );
@@ -1145,13 +1148,13 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_panel1->SetSizer( bSizer4 );
 	m_panel1->Layout();
 	//bSizer4->Fit( m_panel1 );
-	m_notebook1->AddPage( m_panel1, _("Anagrafica 1"),true, index1);
+	m_notebook1->AddPage( m_panel1, _T("Anagrafica 1"),true, index1);
 	//------------------------------------------------------------------------------------------------Fine panel 1
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel2, _("Anagrafica 2"), false, index1 );
+	m_notebook1->AddPage( m_panel2, _T("Anagrafica 2"), false, index1 );
 	//------------------------------------------------------------------------------------------------Fine panel 2
 	m_panel3 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel3, _("Stampe"), false, index2 );
+	m_notebook1->AddPage( m_panel3, _T("Stampe"), false, index2 );
 	//------------------------------------------------------------------------------------------------Fine panel 3
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
@@ -1160,7 +1163,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_toolBar2->SetToolBitmapSize( wxSize( dpiz(24),dpiz(24) ) );
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText2 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F3 Interroga"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText2->Wrap( -1 );
 	m_staticText2->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText2->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1171,7 +1174,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText3 = new wxStaticText( m_toolBar2, wxID_ANY, _("F4 Carica"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText3 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F4 Carica"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText3->Wrap( -1 );
 	m_staticText3->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText3->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1182,7 +1185,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText4 = new wxStaticText( m_toolBar2, wxID_ANY, _("F5 Varia"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText4 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F5 Varia"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText4->Wrap( -1 );
 	m_staticText4->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText4->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1193,7 +1196,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText51 = new wxStaticText( m_toolBar2, wxID_ANY, _("F6 Elimina"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText51 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F6 Elimina"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText51->Wrap( -1 );
 	m_staticText51->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText51->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1204,7 +1207,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText5 = new wxStaticText( m_toolBar2, wxID_ANY, _("F10 Salva"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText5 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F10 Salva"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText5->Wrap( -1 );
 	m_staticText5->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText5->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1215,7 +1218,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText6 = new wxStaticText( m_toolBar2, wxID_ANY, _("F11 Stampa"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText6 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F11 Stampa"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText6->Wrap( -1 );
 	m_staticText6->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText6->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );
@@ -1226,7 +1229,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddSeparator(); 
 	
-	m_staticText201 = new wxStaticText( m_toolBar2, wxID_ANY, _("F1 Help"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText201 = new wxStaticText( m_toolBar2, wxID_ANY, _T("F1 Help"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText201->Wrap( -1 );
 	m_staticText201->SetFont(wxFontInfo(7).FaceName("Tahoma"));
 	//m_staticText201->SetFont( wxFont( 7, 74, 90, 90, false, wxT("Tahoma") ) );

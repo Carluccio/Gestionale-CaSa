@@ -1,6 +1,9 @@
 ///////////////////////////////////////////////////////////////////////////
 // C++ code generated with wxFormBuilder (version Nov  6 2013)
 // http://www.wxformbuilder.org/
+// Author:    	Sala Carlo
+// Created:   	01/02/2019
+// License:   	wxWidgets license (www.wxwidgets.org)
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
 ///////////////////////////////////////////////////////////////////////////
@@ -39,6 +42,9 @@
 #include <wx/notebook.h>
 #include <wx/valtext.h>
 #include <wx/listctrl.h>
+#include <wx/wxsqlite3.h>
+
+
 ///////////////////////////////////////////////////////////////////////////
 
 
@@ -74,7 +80,7 @@ class MainFrameBase : public wxFrame
 	
 	public:
 		
-		MainFrameBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("  Gestionale - CA.SA. -"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLIP_CHILDREN|wxTAB_TRAVERSAL );
+		MainFrameBase( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _T("  Gestionale - CA.SA. -"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxMAXIMIZE_BOX|wxMINIMIZE_BOX|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLIP_CHILDREN|wxTAB_TRAVERSAL );
 		
 		~MainFrameBase();
 	
@@ -163,7 +169,7 @@ class MyFrame1 : public wxFrame
 		
 		wxBitmapButton* m_bpButton12;
 		
-		MyFrame1( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("  Archivio clienti"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
+		MyFrame1( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _T("  Archivio clienti"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
 		
 		~MyFrame1();
 	
@@ -252,7 +258,7 @@ class MyFrame3 : public wxFrame
 		
 		wxBitmapButton* m_bpButton12;
 
-		MyFrame3( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("  Archivio fornitori"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
+		MyFrame3( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _T("  Archivio fornitori"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
 		
 		~MyFrame3();
 	
@@ -272,7 +278,7 @@ class MyFrame4 : public wxFrame
 	
 	public:
 		
-		MyFrame4( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _("Archivio piano dei conti"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 840,590 ), long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
+		MyFrame4( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = _T("Archivio piano dei conti"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 840,590 ), long style = wxCAPTION|wxCLOSE_BOX|wxRESIZE_BORDER|wxTAB_TRAVERSAL );
 		
 		~MyFrame4();
 	
