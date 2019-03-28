@@ -132,7 +132,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	m_menu2->Append( -1, _("Operazioni annuali"), m_menu1 );
 	
-	m_menuBar->Append( m_menu2, _("&Contabilità") ); 
+	m_menuBar->Append( m_menu2, _("&ContabilitÃ ") ); 
 	
 	m_menu6 = new wxMenu();
 	wxMenuItem* m_menuItem191;
@@ -200,7 +200,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	m_menuItem21 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _("Riparazione archivi") ) + wxT('\t') + wxT("Alt+r"), _("Riparazione archivi"), wxITEM_NORMAL );
 	m_menu4->Append( m_menuItem21 );
 	
-	m_menuBar->Append( m_menu4, _("&Utilità") ); 
+	m_menuBar->Append( m_menu4, _("&UtilitÃ ") ); 
 	
 	m_menu10 = new wxMenu();
 	wxMenuItem* m_menuItem201;
@@ -243,7 +243,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	mainSizer->Add( bSizer3, 0, wxEXPAND, 5 );
 	
 	
-	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _("© Carlo Sala Software - v.1.0.0"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
+	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _("Â© Carlo Sala Software - v.1.0.0"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
 	
 	m_hyperlink1->SetHoverColour( wxColour( 255, 255, 255 ) );
 	m_hyperlink1->SetNormalColour( wxColour( 0, 0, 0 ) );
@@ -478,7 +478,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl14->SetMaxLength( 5 );
 	bSizer12->Add( m_textCtrl14, 0, wxALL, 5 );
 	
-	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("CittÃ Â :"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText18->Wrap( -1 );
 	bSizer12->Add( m_staticText18, 0, wxALL, 5 );
 	
@@ -971,7 +971,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl14->SetMaxLength( 5 );
 	bSizer12->Add( m_textCtrl14, 0, wxALL, 5 );
 	
-	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("Città :"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText18 = new wxStaticText( m_panel1, wxID_ANY, _("CittÃ Â :"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText18->Wrap( -1 );
 	bSizer12->Add( m_staticText18, 0, wxALL, 5 );
 	
