@@ -342,7 +342,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	includeList3.Add(wxT("9"));
 	wxTextValidator textValidator3(wxFILTER_INCLUDE_CHAR_LIST);
 	textValidator3.SetIncludes(includeList3);
-	this->SetSize(wxSize(dpiz(840), dpiz(590)));
+	//this->SetSize(wxSize(dpiz(840), dpiz(590)));
 	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
 	this->SetBackgroundColour( wxColour( 180, 180, 180 ) );
 	
@@ -761,7 +761,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	this->Layout();
 	
 	this->Centre( wxBOTH );
-	//this->Fit();
+	this->Fit();
 	// Connect Events
 	this->Connect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( MyFrame1::OnCloseFrame ) );
 	m_bpButton13->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MyFrame1::OnClickClose ), NULL, this );
@@ -835,7 +835,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	includeList3.Add(wxT("9"));
 	wxTextValidator textValidator3(wxFILTER_INCLUDE_CHAR_LIST);
 	textValidator3.SetIncludes(includeList3);
-	this->SetSize(wxSize(dpiz(840), dpiz(590)));
+	//this->SetSize(wxSize(dpiz(840), dpiz(590)));
 	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
 	this->SetBackgroundColour( wxColour( 180, 180, 180 ) );
 	
@@ -1255,7 +1255,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	this->Layout();
 	
 	this->Centre( wxBOTH );
-	//this->Fit();
+	this->Fit();
 	// Connect Events
 	this->Connect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( MyFrame3::OnCloseFrame ) );
 	m_bpButton13->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( MyFrame3::OnClickClose ), NULL, this );
