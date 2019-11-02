@@ -1,3 +1,3 @@
 # Gestionale-CaSa
-Il progetto va compilato con wxWidgets-3.1.2 o superiore.
+Il progetto va compilato con wxWidgets o superiore.
 Implementare anche con la libreria wxSqulite3.

@@ -353,7 +353,8 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bitmap2 = bitmap2.ConvertToImage().Scale(dpiz(16), dpiz(16));
 	int index1 = imageList->Add(bitmap1);
 	int index2 = imageList->Add(bitmap2);
-	
+	wxBoxSizer* bSizer2;
+	bSizer2 = new wxBoxSizer( wxVERTICAL );
 	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
 	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
@@ -385,10 +386,9 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_toolBar1->AddControl( m_bpButton13 );
 	
 	m_toolBar1->Realize(); 
+	bSizer2->Add(m_toolBar1, 0, wxEXPAND, 5);
 	
-	wxBoxSizer* bSizer2;
-	bSizer2 = new wxBoxSizer( wxVERTICAL );
-	bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
+	//bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
 	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
@@ -451,7 +451,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131->Add( m_staticText221, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer131, 0, wxEXPAND, 5 );
-	bSizer4->Add( 0, dpiz(20), 0, wxEXPAND, 0 );
+	//bSizer4->Add( 0, dpiz(20), 0, wxEXPAND, 0 );
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxHORIZONTAL );
 	
@@ -654,7 +654,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	//bSizer4->Add( 0, 0, 1, wxEXPAND, 5 );
 	m_panel1->SetSizer( bSizer4 );
 	m_panel1->Layout();
-	//bSizer4->Fit( m_panel1 );
+	bSizer4->Fit( m_panel1 );
 	m_notebook1->AddPage( m_panel1, _T("Anagrafica 1"),true, index1);
 	//------------------------------------------------------------------------------------------------Fine panel 1
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
@@ -846,7 +846,8 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bitmap2 = bitmap2.ConvertToImage().Scale(dpiz(16), dpiz(16));
 	int index1 = imageList->Add(bitmap1);
 	int index2 = imageList->Add(bitmap2);
-	
+	wxBoxSizer* bSizer2;
+	bSizer2 = new wxBoxSizer( wxVERTICAL );
 	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
 	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
@@ -878,10 +879,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_toolBar1->AddControl( m_bpButton13 );
 	
 	m_toolBar1->Realize(); 
-	
-	wxBoxSizer* bSizer2;
-	bSizer2 = new wxBoxSizer( wxVERTICAL );
-	bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
+	bSizer2->Add(m_toolBar1, 0, wxEXPAND, 5);
 	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
@@ -1147,7 +1145,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	//bSizer4->Add( 0, 0, 1, wxEXPAND, 5 );
 	m_panel1->SetSizer( bSizer4 );
 	m_panel1->Layout();
-	//bSizer4->Fit( m_panel1 );
+	bSizer4->Fit( m_panel1 );
 	m_notebook1->AddPage( m_panel1, _T("Anagrafica 1"),true, index1);
 	//------------------------------------------------------------------------------------------------Fine panel 1
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
