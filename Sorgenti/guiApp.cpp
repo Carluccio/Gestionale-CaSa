@@ -449,7 +449,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131->Add( m_staticText221, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer131, 0, wxEXPAND, 5 );
-	//bSizer4->Add( 0, dpiz(20), 0, wxEXPAND, 0 );
+	bSizer4->Add( 0, dpiz(15), 0, wxEXPAND, 0 );
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxHORIZONTAL );
 	
@@ -940,7 +940,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131->Add( m_staticText221, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer131, 0, wxEXPAND, 5 );
-	bSizer4->Add( 0, dpiz(20), 0, wxEXPAND, 0 );
+	bSizer4->Add( 0, dpiz(15), 0, wxEXPAND, 0 );
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxHORIZONTAL );
 	
