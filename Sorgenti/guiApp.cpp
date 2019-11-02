@@ -387,9 +387,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar1->Realize(); 
 	bSizer2->Add(m_toolBar1, 0, wxEXPAND, 5);
-	
-	//bSizer2->Add( 0, dpiz(43), 0, 0, 0 );
-	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
+	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(440)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
 	m_panel1 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
@@ -880,7 +878,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar1->Realize(); 
 	bSizer2->Add(m_toolBar1, 0, wxEXPAND, 5);
-	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(460)), 0 );
+	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxSize(-1,dpiz(440)), 0 );
 	m_notebook1->AssignImageList(imageList);
 	
 	m_panel1 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
