@@ -246,7 +246,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	mainSizer->Add( bSizer3, 0, wxEXPAND, 5 );
 	
 	
-	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _T("© Carlo Sala Software - v.1.0.0"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
+	m_hyperlink1 = new wxGenericHyperlinkCtrl( this, wxID_ANY, _T("© Carlo Sala Software - v.1.0.1"), wxT("https://www.carlosala.net"), wxDefaultPosition, wxDefaultSize,wxHL_DEFAULT_STYLE);
 	
 	m_hyperlink1->SetHoverColour( wxColour( 255, 255, 255 ) );
 	m_hyperlink1->SetNormalColour( wxColour( 0, 0, 0 ) );
@@ -449,7 +449,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131->Add( m_staticText221, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer131, 0, wxEXPAND, 5 );
-	bSizer4->Add( 0, dpiz(15), 0, wxEXPAND, 0 );
+	bSizer4->Add( 0, dpiz(10), 0, wxEXPAND, 0 );
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxHORIZONTAL );
 	
@@ -940,7 +940,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	bSizer131->Add( m_staticText221, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer131, 0, wxEXPAND, 5 );
-	bSizer4->Add( 0, dpiz(15), 0, wxEXPAND, 0 );
+	bSizer4->Add( 0, dpiz(10), 0, wxEXPAND, 0 );
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxHORIZONTAL );
 	
