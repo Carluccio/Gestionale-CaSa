@@ -32,9 +32,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem5;
 	m_menuItem5 = new wxMenuItem( m_menu3, wxID_ANY, wxString( _T("Azienda") ) + wxT('\t') + wxT("Alt+a"), _T("Azienda"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem5->SetBitmaps( wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem5->SetBitmaps( wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16)) ;
 	#elif defined( __WXGTK__ )
-	m_menuItem5->SetBitmap( wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem5->SetBitmap( wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu3->Append( m_menuItem5 );
 	
@@ -94,9 +94,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* menuFileExit;
 	menuFileExit = new wxMenuItem( m_menu3, wxID_EXIT, wxString( _T("Chiudi applicazione") ) + wxT('\t') + wxT("Alt+x"), _T("Chiudi applicazione"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	menuFileExit->SetBitmaps( wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	menuFileExit->SetBitmaps( wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	menuFileExit->SetBitmap( wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	menuFileExit->SetBitmap( wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu3->Append( menuFileExit );
 	
@@ -106,9 +106,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem7;
 	m_menuItem7 = new wxMenuItem( m_menu2, wxID_ANY, wxString( _T("Prima nota") ) + wxT('\t') + wxT("Alt+m"), _T("Prima nota"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem7->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem7->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	m_menuItem7->SetBitmap( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem7->SetBitmap( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu2->Append( m_menuItem7 );
 	
@@ -141,9 +141,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem191;
 	m_menuItem191 = new wxMenuItem( m_menu6, wxID_ANY, wxString( _T("Fatture di vendita") ) + wxT('\t') + wxT("Alt+v"), _T("Fatture di vendita"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem191->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem191->SetBitmaps( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	m_menuItem191->SetBitmap( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem191->SetBitmap( wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu6->Append( m_menuItem191 );
 	m_menuItem191->Enable( false );
@@ -154,9 +154,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem15;
 	m_menuItem15 = new wxMenuItem( m_menu5, wxID_ANY, wxString( _T("Libri iva") ) + wxT('\t') + wxT("Alt+q"), _T("Stampe libri iva"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem15->SetBitmaps( wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem15->SetBitmaps( wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	m_menuItem15->SetBitmap( wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem15->SetBitmap( wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu5->Append( m_menuItem15 );
 	
@@ -181,9 +181,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem24;
 	m_menuItem24 = new wxMenuItem( m_menu4, wxID_ANY, wxString( _T("Scelta azienda") ) + wxT('\t') + wxT("Alt+y"), wxEmptyString, wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem24->SetBitmaps( wxBitmap( wxT("Img/cog.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem24->SetBitmaps( wxBitmap( wxT("Img/cog.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	m_menuItem24->SetBitmap( wxBitmap( wxT("Img/cog.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem24->SetBitmap( wxBitmap( wxT("Img/cog.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu4->Append( m_menuItem24 );
 	
@@ -209,9 +209,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxMenuItem* m_menuItem201;
 	m_menuItem201 = new wxMenuItem( m_menu10, wxID_ANY, wxString( _T("Modulo fatture") ) + wxT('\t') + wxT("Alt+t"), _T("Modulo fatture"), wxITEM_NORMAL );
 	#ifdef __WXMSW__
-	m_menuItem201->SetBitmaps( wxBitmap( wxT("Img/cog_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem201->SetBitmaps( wxBitmap( wxT("Img/cog_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#elif defined( __WXGTK__ )
-	m_menuItem201->SetBitmap( wxBitmap( wxT("Img/cog_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(16), dpiz(16)) );
+	m_menuItem201->SetBitmap( wxBitmap( wxT("Img/cog_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(16,16));
 	#endif
 	m_menu10->Append( m_menuItem201 );
 	m_menuItem201->Enable( false );
@@ -238,7 +238,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	//m_staticText7->SetFont( wxFont( 12, 74, 90, 90, false, wxT("Tahoma") ) );
 	bSizer3->Add( m_staticText7, 0, wxALIGN_BOTTOM|wxALL, 5 );
 	
-	wxBitmap bmp = wxBitmap( wxT("Img/office-chart-pie.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(36), dpiz(36));
+	wxBitmap bmp = wxBitmap( wxT("Img/office-chart-pie.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(36,36);
 	m_bitmap1 = new wxStaticBitmap( this, wxID_ANY, bmp, wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer3->Add( m_bitmap1, 0, wxALL|wxALIGN_BOTTOM, 5 );
 	
@@ -356,33 +356,32 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer2;
 	bSizer2 = new wxBoxSizer( wxVERTICAL );
 	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
-	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
 	   	
-	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton1 );
 	m_toolBar1->AddSeparator();
-	m_bpButton2 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_add.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton2 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_add.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton2 );
 	m_toolBar1->AddSeparator();
-	m_bpButton3 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton3 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton3 );
 	m_toolBar1->AddSeparator();
-	m_bpButton9 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/Trash.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton9 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/Trash.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton9 );
 	m_toolBar1->AddSeparator();
-	m_bpButton4 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/disk.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton4 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/disk.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton4 );
 	m_toolBar1->AddSeparator();
-	m_bpButton10 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton10 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton10 );
 	m_toolBar1->AddSeparator(); 
 	m_toolBar1->AddSeparator();
-	m_bpButton11 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/help.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton11 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/help.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton11 );
 	m_toolBar1->AddSeparator(); 
 	m_toolBar1->AddSeparator();
-	m_bpButton13 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton13 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton13 );
 	
 	m_toolBar1->Realize(); 
@@ -525,7 +524,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl16 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0|wxWANTS_CHARS,textValidator3 );
 	m_textCtrl16->SetMaxLength( 16 );
 	bSizer13->Add( m_textCtrl16, 1, wxALL, 5 );
-	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton16, 0, wxALL, 5 );
 	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _T("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer13->Add( m_checkBox1, 0, wxALL, 5 );
@@ -545,7 +544,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl17->SetForegroundColour( wxColour( 255, 255, 255 ) );
 	m_textCtrl17->SetBackgroundColour( wxColour( 66, 136, 96 ) );
 	bSizer13->Add( m_textCtrl17, 1, wxALL, 5 );
-	m_bpButton15 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton15 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton15, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer13, 0, wxEXPAND, 5 );
@@ -597,7 +596,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl151 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_textCtrl151->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl151, 1, wxALL, 5 );
-	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton17, 0, wxALL, 5 );
 	
 	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _T("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -607,7 +606,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl153 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_textCtrl153->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl153, 1, wxALL, 5 );
-	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton18, 0, wxALL, 5 );
 
 	bSizer4->Add( bSizer14, 0, wxEXPAND, 5 );
@@ -645,7 +644,7 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_staticline1 = new wxStaticLine( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_VERTICAL );
 	sbSizer1->Add( m_staticline1, 0, wxEXPAND | wxALL, 5 );
 	
-	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	bSizer4->Add( sbSizer1, 0, wxEXPAND, 5 );
 	bSizer4->Add( 0, dpiz(3), 0, 0, 0 );
@@ -656,10 +655,79 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_notebook1->AddPage( m_panel1, _T("Anagrafica 1"),true, index1);
 	//------------------------------------------------------------------------------------------------Fine panel 1
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
+	
+	wxBoxSizer* bSizer40;
+	bSizer40 = new wxBoxSizer( wxVERTICAL );
+	
+	
+	bSizer40->Add( 0, dpiz(10), 0, 0, 0 );
+		
+	wxBoxSizer* bSizer80;
+	bSizer80 = new wxBoxSizer( wxHORIZONTAL );
+	
+	m_staticText11 = new wxStaticText( m_panel2, wxID_ANY, _T("Codice:"), wxDefaultPosition, wxSize( dpiz(78),-1 ), 0 );
+	m_staticText11->Wrap( -1 );
+	bSizer80->Add( m_staticText11, 0, wxALL, 4 );
+	m_textCtrl152 = new wxTextCtrl( m_panel2, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( dpiz(50),-1 ), 0|wxWANTS_CHARS,textValidator );
+	m_textCtrl152->SetMaxLength( 4 );
+	m_textCtrl152->SetFont(wxFontInfo(9).FaceName("Tahoma"));
+	//m_textCtrl152->SetFont( wxFont( 9, 74, 90, 90, false, wxT("Tahoma") ) );
+	m_textCtrl152->SetBackgroundColour( wxColour( 66, 136, 96 ) );	
+	m_textCtrl152->SetForegroundColour( wxColour( 255, 255, 255 ) );
+	bSizer80->Add( m_textCtrl152, 0, wxALL, 5 );
+	
+	m_textCtrl6 = new wxTextCtrl( m_panel2, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl6->SetMaxLength( 45 );
+	m_textCtrl6->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
+	//m_textCtrl6->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
+	m_textCtrl6->SetForegroundColour( wxColour( 255, 255, 255 ) );
+	m_textCtrl6->SetBackgroundColour( wxColour( 66, 136, 96 ) );
+	bSizer80->Add( m_textCtrl6, 1, wxALL, 5 );
+	
+	
+	bSizer40->Add( bSizer80, 0, wxEXPAND, 5 );
+	
+	wxBoxSizer* bSizer90;
+	bSizer90 = new wxBoxSizer( wxHORIZONTAL );
+	
+	
+	bSizer90->Add( dpiz(138),0,0,0,0 ); //78+50+10
+	
+	m_textCtrl80 = new wxTextCtrl( m_panel2, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	m_textCtrl80->SetMaxLength( 45 );
+	m_textCtrl80->SetFont(wxFontInfo(9).FaceName("Tahoma"));
+	//m_textCtrl8->SetFont( wxFont( 9, 74, 90, 92, false, wxT("Tahoma") ) );
+	m_textCtrl8->SetValue("prova");
+	m_textCtrl80->SetValue(m_textCtrl8->GetValue());
+	m_textCtrl80->Enable( false );
+	m_textCtrl6->Enable( false );
+	m_textCtrl152->Enable( false );
+	//m_textCtrl80 = m_textCtrl8;
+	bSizer90->Add( m_textCtrl80, 1, wxALL, 5 );
+	
+	
+	bSizer40->Add( bSizer90, 0, wxEXPAND, 5 );
+	bSizer40->Add( 0, dpiz(10), 0, 0, 0 );
+	wxBoxSizer* bSizer1310;
+	bSizer1310 = new wxBoxSizer( wxVERTICAL );
+	m_staticline3 = new wxStaticLine( m_panel2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	bSizer1310->Add( m_staticline3, 0, wxEXPAND | wxALL, 5 );
+	m_staticText221 = new wxStaticText( m_panel2, wxID_ANY, _T("Dati anagrafici"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText221->SetFont(wxFontInfo(9).FaceName("Tahoma").Bold());
+	m_staticText221->SetForegroundColour( wxColour( 67, 118, 254 ) );
+	m_staticText221->Wrap( -1 );
+	bSizer1310->Add( m_staticText221, 0, wxALL, 5 );
+	
+	bSizer40->Add( bSizer1310, 0, wxEXPAND, 5 );
+	bSizer40->Add( 0, dpiz(10), 0, wxEXPAND, 0 );
+	m_panel2->SetSizer( bSizer40 );
+	m_panel2->Layout();
+	bSizer40->Fit( m_panel2 );
+	
 	m_notebook1->AddPage( m_panel2, _T("Anagrafica 2"), false, index1 );
 	//------------------------------------------------------------------------------------------------Fine panel 2
 	m_panel3 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel3, _T("Stampe"), false, index2 );
+	m_notebook1->AddPage( m_panel3, _T("Impostazione stampe"), false, index2 );
 	//------------------------------------------------------------------------------------------------Fine panel 3
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
@@ -742,15 +810,15 @@ MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddControl( m_staticText201 );
 	m_toolBar2->AddStretchableSpace();
-	m_bpButton5 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-first-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ),  wxBU_AUTODRAW );
+	m_bpButton5 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-first-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ),  wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton5 );
-	m_bpButton6 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-next-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton6 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-next-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton6 );
-	m_bpButton7 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-previous-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton7 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-previous-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton7 );
-	m_bpButton8 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-last-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton8 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-last-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton8 );
-	m_bpButton14 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/search.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton14 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/search.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton14 );
 	m_toolBar2->Realize(); 
 	
@@ -847,33 +915,32 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	wxBoxSizer* bSizer2;
 	bSizer2 = new wxBoxSizer( wxVERTICAL );
 	m_toolBar1 = new wxToolBar( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL|wxSUNKEN_BORDER ); 
-	m_toolBar1->SetToolBitmapSize( wxSize( dpiz(34),dpiz(34) ) );
 	m_toolBar1->AddSeparator();
     	
-	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton1 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton1 );
 	m_toolBar1->AddSeparator();
-	m_bpButton2 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_add.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton2 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_add.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton2 );
 	m_toolBar1->AddSeparator();
-	m_bpButton3 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton3 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_edit.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton3 );
 	m_toolBar1->AddSeparator();
-	m_bpButton9 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/Trash.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton9 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/Trash.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton9 );
 	m_toolBar1->AddSeparator();
-	m_bpButton4 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/disk.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton4 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/disk.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton4 );
 	m_toolBar1->AddSeparator();
-	m_bpButton10 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton10 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/printer.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton10 );
 	m_toolBar1->AddSeparator(); 
 	m_toolBar1->AddSeparator();
-	m_bpButton11 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/help.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton11 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/help.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton11 );
 	m_toolBar1->AddSeparator(); 
 	m_toolBar1->AddSeparator();
-	m_bpButton13 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton13 = new wxBitmapButton( m_toolBar1, wxID_ANY, wxBitmap( wxT("Img/application_delete.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	m_toolBar1->AddControl( m_bpButton13 );
 	
 	m_toolBar1->Realize(); 
@@ -1016,7 +1083,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl16 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0|wxWANTS_CHARS,textValidator3);
 	m_textCtrl16->SetMaxLength( 16 );
 	bSizer13->Add( m_textCtrl16, 1, wxALL, 5 );
-	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton16 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton16, 0, wxALL, 5 );
 	m_checkBox1 = new wxCheckBox( m_panel1, wxID_ANY, _T("Persona fisica"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer13->Add( m_checkBox1, 0, wxALL, 5 );
@@ -1036,7 +1103,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl17->SetForegroundColour( wxColour( 255, 255, 255 ) );
 	m_textCtrl17->SetBackgroundColour( wxColour( 66, 136, 96 ) );
 	bSizer13->Add( m_textCtrl17, 1, wxALL, 5 );
-	m_bpButton15 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton15 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer13->Add( m_bpButton15, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer13, 0, wxEXPAND, 5 );
@@ -1088,7 +1155,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl151 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_textCtrl151->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl151, 1, wxALL, 5 );
-	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(15), dpiz(15)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton17 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok-icon.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(15,15), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton17, 0, wxALL, 5 );	
 	
 	m_staticText24 = new wxStaticText( m_panel1, wxID_ANY, _T("Sito web:"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -1098,7 +1165,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_textCtrl153 = new wxTextCtrl( m_panel1, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_textCtrl153->SetMaxLength( 40 );
 	bSizer14->Add( m_textCtrl153, 1, wxALL, 5 );
-	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
+	m_bpButton18 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(25),-1 ), wxBU_AUTODRAW );
 	bSizer14->Add( m_bpButton18, 0, wxALL, 5 );
 	
 	bSizer4->Add( bSizer14, 0, wxEXPAND, 5 );
@@ -1136,7 +1203,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_staticline1 = new wxStaticLine( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_VERTICAL );
 	sbSizer1->Add( m_staticline1, 0, wxEXPAND | wxALL, 5 );
 	
-	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(32), dpiz(32)), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	m_bpButton12 = new wxBitmapButton( m_panel1, wxID_ANY, wxBitmap( wxT("Img/Ok.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(32,32), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	sbSizer1->Add( m_bpButton12, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	bSizer4->Add( sbSizer1, 0, wxEXPAND, 5 );
 	bSizer4->Add( 0, dpiz(3), 0, 0, 0 );
@@ -1150,7 +1217,7 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_notebook1->AddPage( m_panel2, _T("Anagrafica 2"), false, index1 );
 	//------------------------------------------------------------------------------------------------Fine panel 2
 	m_panel3 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSUNKEN_BORDER|wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel3, _T("Stampe"), false, index2 );
+	m_notebook1->AddPage( m_panel3, _T("Impostazione stampe"), false, index2 );
 	//------------------------------------------------------------------------------------------------Fine panel 3
 	
 	bSizer2->Add( m_notebook1, 0, wxEXPAND | wxALL, 5 );
@@ -1233,15 +1300,15 @@ MyFrame3::MyFrame3( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_toolBar2->AddControl( m_staticText201 );
 	m_toolBar2->AddStretchableSpace();
-	m_bpButton5 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-first-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ),  wxBU_AUTODRAW );
+	m_bpButton5 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-first-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ),  wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton5 );
-	m_bpButton6 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-next-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton6 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-next-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton6 );
-	m_bpButton7 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-previous-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton7 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-previous-4.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize( dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton7 );
-	m_bpButton8 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-last-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton8 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/go-last-2.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton8 );
-	m_bpButton14 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/search.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(dpiz(22), dpiz(22)), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
+	m_bpButton14 = new wxBitmapButton( m_toolBar2, wxID_ANY, wxBitmap( wxT("Img/search.png"), wxBITMAP_TYPE_ANY ).ConvertToImage().Scale(22,22), wxDefaultPosition, wxSize(dpiz(55),-1 ), wxBU_AUTODRAW );
 	m_toolBar2->AddControl( m_bpButton14 );
 	
 	m_toolBar2->Realize(); 
